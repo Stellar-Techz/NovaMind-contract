@@ -17,7 +17,7 @@ Market momentum
 Token swap activity
 Stablecoin flow (USDC / USDT)
 
-# Users can automate actions such as:
+ Users can automate actions such as:
 
 Telegram alerts
 AI-powered trading insights
@@ -195,7 +195,7 @@ Rules
 Create Rule
 POST /rules
 
-# Example:
+ Example:
 
 {
 "wallet": "YOUR_WALLET",
@@ -221,7 +221,7 @@ Swaps
 Execute Swap
 POST /swaps/execute
 
-# Example:
+ Example:
 
 {
 "fromToken": "AQUA",
@@ -266,7 +266,7 @@ Cross-chain swaps
 Copy trading automation
 Revenue Model
 
-# StellarFlow plans to monetize through:
+ StellarFlow plans to monetize through:
 
 Premium subscriptions
 Advanced AI automation
@@ -281,7 +281,7 @@ The Stellar ecosystem is growing rapidly with creator assets, stablecoins, and t
 
 However, most users still rely on manual monitoring and emotional trading decisions.
 
-# StellarFlow transforms Stellar assets into programmable, intelligent assets using:
+StellarFlow transforms Stellar assets into programmable, intelligent assets using:
 
 AI
 automation
