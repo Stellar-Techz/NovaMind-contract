@@ -1,4 +1,4 @@
-# StellarFlow
+# NovaMind
 
 AI-powered automation engine for creator tokens, stablecoins, and digital assets on the Stellar network.
 
@@ -6,7 +6,7 @@ AI-powered automation engine for creator tokens, stablecoins, and digital assets
 
 # Overview
 
-StellarFlow helps users automate trading actions, token monitoring, alerts, and portfolio protection using real-time Stellar blockchain activity.
+NovaMind helps users automate trading actions, token monitoring, alerts, and portfolio protection using real-time Stellar blockchain activity.
 
 Instead of manually tracking market movement, users can create intelligent automation rules that react instantly to:
 
@@ -18,7 +18,7 @@ Instead of manually tracking market movement, users can create intelligent autom
 * Swap activity
 * Market momentum
 
-StellarFlow combines:
+NovaMind combines:
 
 * AI-powered strategy generation
 * Real-time blockchain monitoring
@@ -61,7 +61,7 @@ Example prompt:
 
 > “Protect my AQUA tokens during market volatility.”
 
-StellarFlow can generate a rule like:
+NovaMind can generate a rule like:
 
 ```json id="s1n8z2"
 {
@@ -84,7 +84,7 @@ This means:
 
 ## Real-Time Market Monitoring
 
-StellarFlow continuously monitors Stellar network activity in real time.
+NovaMind continuously monitors Stellar network activity in real time.
 
 Supported monitoring conditions:
 
@@ -115,7 +115,7 @@ When a rule is triggered, StellarFlow can automatically:
 
 ## Token Swapping
 
-StellarFlow supports Stellar asset swaps through Stellar DEX liquidity.
+NovaMind supports Stellar asset swaps through Stellar DEX liquidity.
 
 Users can:
 
@@ -161,14 +161,14 @@ Dashboard features:
 
 ---
 
-# How StellarFlow Works
+# How NovaMind Works
 
 ```text id="0c2h6p"
 User Connects Wallet
         ↓
 Creates Automation Rules
         ↓
-StellarFlow Monitors Blockchain Activity
+NovaMind Monitors Blockchain Activity
         ↓
 Market Event Happens
         ↓
@@ -246,7 +246,7 @@ Track large USDC or USDT inflows into specific assets.
 
 # Database
 
-StellarFlow uses PostgreSQL with Prisma ORM.
+NovaMind uses PostgreSQL with Prisma ORM.
 
 Main database models include:
 
@@ -451,7 +451,7 @@ Planned future features include:
 
 # Revenue Model
 
-StellarFlow plans to generate revenue through:
+NovaMind plans to generate revenue through:
 
 * Premium subscriptions
 * Advanced AI automation tools
@@ -462,11 +462,11 @@ StellarFlow plans to generate revenue through:
 
 ---
 
-# Why StellarFlow?
+# Why NovaMind?
 
 Most traders and creator-token holders still rely on manual monitoring and emotional decisions.
 
-StellarFlow transforms Stellar assets into programmable, intelligent assets using:
+NovaMind transforms Stellar assets into programmable, intelligent assets using:
 
 * AI
 * automation
