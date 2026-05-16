@@ -91,7 +91,7 @@ Swap Stellar tokens into stablecoins like USDC or USDT
 Generate AI market insights
 Emit realtime dashboard updates
 
-Example automations:
+# Example automations:
 
 Swap risky assets into USDC during crashes
 Convert profits into XLM
@@ -99,7 +99,7 @@ Trigger alerts when whales buy a creator token
 Auto-monitor liquidity movement
 Token Swapping
 
-# StellarFlow supports automated Stellar asset swaps.
+StellarFlow supports automated Stellar asset swaps.
 
 Users can:
 
@@ -291,6 +291,4 @@ creator engagement tools
 
 The goal is to become the automation layer for creator economies and token communities on Stellar.
 
-License
 
-MIT License
