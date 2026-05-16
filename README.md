@@ -1,242 +1,393 @@
-StellarFlow
+# StellarFlow
 
-AI-powered automation engine for creator tokens and assets on the Stellar network.
+AI-powered automation engine for creator tokens, stablecoins, and digital assets on the Stellar network.
+
+---
 
 # Overview
 
-StellarFlow helps creators, traders, and token communities automate actions based on real-time on-chain activity across the Stellar ecosystem.
+StellarFlow helps users automate trading actions, token monitoring, alerts, and portfolio protection using real-time Stellar blockchain activity.
 
-Instead of manually monitoring Stellar assets, StellarFlow allows users to create intelligent automation rules that react to:
+Instead of manually tracking market movement, users can create intelligent automation rules that react instantly to:
 
-Whale buys
-Price pumps or dumps
-Volume spikes
-Liquidity movement
-New holders
-Market momentum
-Token swap activity
-Stablecoin flow (USDC / USDT)
+* Whale buys and sells
+* Price increases or crashes
+* Volume spikes
+* Liquidity movement
+* Stablecoin inflows
+* Swap activity
+* Market momentum
 
- Users can automate actions such as:
+StellarFlow combines:
 
-Telegram alerts
-AI-powered trading insights
-Auto-swap strategies
-Portfolio protection
-Loyalty rewards
-Community engagement automation
+* AI-powered strategy generation
+* Real-time blockchain monitoring
+* Automated token swaps
+* Live notifications
+* Smart rule automation
+* Portfolio protection tools
 
-# StellarFlow combines:
+The goal is to make Stellar assets programmable and intelligent.
 
-Real-time Stellar asset monitoring
-AI-generated trading rules
-Rule-based automation
-Live notifications
-WebSocket updates
-Stellar wallet authentication
-Native token and stablecoin swaps
-Features
-Wallet Authentication
-Stellar wallet login
-Signature verification
-JWT authentication
-Secure nonce-based auth flow
+---
+
+# Core Features
+
+## Wallet Authentication
+
+Users securely connect their Stellar wallets to access the platform.
 
 Supported wallets may include:
 
-Freighter Wallet
-Albedo
-Lobstr
-WalletConnect-compatible wallets
-AI Rule Generator
+* Freighter Wallet
+* Albedo
+* Lobstr
+* WalletConnect-compatible wallets
 
-Users can ask AI to generate automation strategies.
+Authentication includes:
 
-Example:
+* Wallet signature verification
+* Nonce-based authentication
+* JWT sessions
+* Secure login flow
 
-“Create a defensive strategy for AQUA during market volatility.”
+---
 
-AI automatically creates rules such as:
+## AI Rule Generator
 
+Users can ask AI to create automation strategies automatically.
+
+Example prompt:
+
+> “Protect my AQUA tokens during market volatility.”
+
+StellarFlow can generate a rule like:
+
+```json id="s1n8z2"
 {
-"condition": {
-"type": "price_decrease",
-"value": 8
-},
-"action": {
-"type": "swap_to_usdc"
+  "condition": {
+    "type": "price_decrease",
+    "value": 10
+  },
+  "action": {
+    "type": "swap_to_usdc"
+  }
 }
-}
-Real-Time Market Monitoring
+```
 
-StellarFlow continuously monitors Stellar assets using live market data.
+This means:
 
-Supported conditions:
+* If AQUA drops by 10%
+* Automatically swap assets into USDC
 
-whale_buy
-whale_sell
-price_increase
-price_decrease
-high_volume
-liquidity_spike
-swap_activity
-stablecoin_inflow
-Automated Actions
+---
 
-When rules trigger, BagFlow can:
+## Real-Time Market Monitoring
 
-Send Telegram alerts
-Execute simulated swaps
-Swap Stellar tokens into stablecoins like USDC or USDT
-Generate AI market insights
-Emit realtime dashboard updates
+StellarFlow continuously monitors Stellar network activity in real time.
 
-# Example automations:
+Supported monitoring conditions:
 
-Swap risky assets into USDC during crashes
-Convert profits into XLM
-Trigger alerts when whales buy a creator token
-Auto-monitor liquidity movement
-Token Swapping
+* whale_buy
+* whale_sell
+* price_increase
+* price_decrease
+* high_volume
+* liquidity_spike
+* swap_activity
+* stablecoin_inflow
 
-StellarFlow supports automated Stellar asset swaps.
+The system reacts instantly whenever market conditions match user rules.
+
+---
+
+## Automated Actions
+
+When a rule is triggered, StellarFlow can automatically:
+
+* Send Telegram alerts
+* Generate AI market insights
+* Trigger dashboard notifications
+* Execute swap strategies
+* Protect portfolios during crashes
+
+---
+
+## Token Swapping
+
+StellarFlow supports Stellar asset swaps through Stellar DEX liquidity.
 
 Users can:
 
-Swap creator tokens into XLM
-Swap Stellar assets into USDC or USDT
-Configure defensive sell strategies
-Automate profit-taking
-Route swaps through Stellar DEX liquidity
+* Swap creator tokens into XLM
+* Swap tokens into USDC or USDT
+* Take profits automatically
+* Create defensive trading strategies
+* Reduce exposure during market crashes
 
-# Supported swap examples:
+Example swaps:
 
-AQUA → USDC
-Creator Token → XLM
-XLM → USDT
-Telegram Integration
+* AQUA → USDC
+* Creator Token → XLM
+* XLM → USDT
+
+---
+
+## Telegram Notifications
 
 Users can connect Telegram to receive:
 
-Personal notifications
-Rule trigger alerts
-AI-generated trading insights
-Swap execution updates
-Realtime Dashboard
+* Market alerts
+* Rule trigger notifications
+* AI trading insights
+* Swap execution updates
+* Portfolio protection alerts
 
-Live updates powered by WebSockets.
+---
 
-# Dashboard includes:
+## Realtime Dashboard
 
-Active rules
-Trigger history
-Market events
-Token monitoring
-Portfolio tracking
-AI insights
-Swap activity
-Tech Stack
-Backend
-NestJS
-Prisma ORM
-PostgreSQL
-WebSockets
-JWT Authentication
-Blockchain
-Stellar Network
-Stellar SDK
-Horizon API
-Soroban (optional smart contract support)
-Stellar DEX
-AI
-OpenRouter
-Llama 3
-Notifications
-Telegram Bot API
-Architecture
-Wallet Login
-↓
-Rule Creation
-↓
-Asset Monitoring
-↓
-Market Events
-↓
-Rules Engine
-↓
-AI Analysis
-↓
-Actions Service
-↓
-Swap Engine
-↓
-Telegram + Realtime Dashboard
-API Routes
-Auth
-Generate Nonce
+The dashboard provides live updates powered by WebSockets.
+
+Dashboard features:
+
+* Active automation rules
+* Market events
+* Token tracking
+* Trigger history
+* Portfolio monitoring
+* Swap history
+* AI insights
+
+---
+
+# How StellarFlow Works
+
+```text id="0c2h6p"
+User Connects Wallet
+        ↓
+Creates Automation Rules
+        ↓
+StellarFlow Monitors Blockchain Activity
+        ↓
+Market Event Happens
+        ↓
+Rules Engine Evaluates Conditions
+        ↓
+AI Generates Insights
+        ↓
+Actions Execute Automatically
+        ↓
+Notifications + Dashboard Updates
+```
+
+---
+
+# Example Use Cases
+
+## Crash Protection
+
+Automatically swap tokens into USDC if price drops by 15%.
+
+---
+
+## Whale Tracking
+
+Receive alerts when large wallets buy creator tokens.
+
+---
+
+## Profit Taking
+
+Automatically convert profits into XLM after major price pumps.
+
+---
+
+## Stablecoin Monitoring
+
+Track large USDC or USDT inflows into specific assets.
+
+---
+
+# Tech Stack
+
+## Backend
+
+* NestJS
+* Prisma ORM
+* PostgreSQL
+* WebSockets
+* JWT Authentication
+
+---
+
+## Blockchain
+
+* Stellar Network
+* Stellar SDK
+* Horizon API
+* Stellar DEX
+* Soroban (optional)
+
+---
+
+## AI
+
+* OpenRouter
+* Llama 3
+
+---
+
+## Notifications
+
+* Telegram Bot API
+
+---
+
+# Database
+
+StellarFlow uses PostgreSQL with Prisma ORM.
+
+Main database models include:
+
+* Users
+* Rules
+* Tokens
+* Market Events
+* Swaps
+* Notifications
+* Portfolio Assets
+* Rule Triggers
+
+---
+
+# API Routes
+
+# Authentication
+
+## Generate Nonce
+
+```http id="qv1jdh"
 GET /auth/nonce?wallet=YOUR_WALLET
-Verify Signature
+```
+
+---
+
+## Verify Wallet Signature
+
+```http id="6f2i0k"
 POST /auth/verify
+```
 
 Body:
 
+```json id="oj5n9h"
 {
-"wallet": "YOUR_WALLET",
-"signature": "SIGNED_MESSAGE"
+  "wallet": "YOUR_WALLET",
+  "signature": "SIGNED_MESSAGE"
 }
-Users
-Connect Wallet
-POST /users/connect-wallet
-Get User
-GET /users/:wallet
-Link Telegram
-POST /users/link-telegram
-Rules
-Create Rule
+```
+
+---
+
+# Rules
+
+## Create Rule
+
+```http id="ihj9mb"
 POST /rules
+```
 
- Example:
+Example:
 
+```json id="plbqrx"
 {
-"wallet": "YOUR_WALLET",
-"token": "AQUA",
-"name": "Crash Protection",
-"condition": {
-"type": "price_decrease",
-"value": 10
-},
-"action": {
-"type": "swap_to_usdc"
+  "token": "AQUA",
+  "condition": {
+    "type": "price_decrease",
+    "value": 10
+  },
+  "action": {
+    "type": "swap_to_usdc"
+  }
 }
-}
-Generate AI Rules
+```
+
+---
+
+## Generate AI Rule
+
+```http id="v4u11j"
 POST /rules/ai
-Get Wallet Rules
+```
+
+---
+
+## Get User Rules
+
+```http id="3y6ny9"
 GET /rules/:wallet
-Update Rule
+```
+
+---
+
+## Update Rule
+
+```http id="m2m9sl"
 PATCH /rules/:id
-Delete Rule
+```
+
+---
+
+## Delete Rule
+
+```http id="lfn1x7"
 DELETE /rules/:id
-Swaps
-Execute Swap
+```
+
+---
+
+# Swaps
+
+## Execute Swap
+
+```http id="3ztcrd"
 POST /swaps/execute
+```
 
- Example:
+Example:
 
+```json id="9ah9ye"
 {
-"fromToken": "AQUA",
-"toToken": "USDC",
-"amount": 100
+  "fromToken": "AQUA",
+  "toToken": "USDC",
+  "amount": 100
 }
-Get Swap History
+```
+
+---
+
+## Get Swap History
+
+```http id="5tz63g"
 GET /swaps/history/:wallet
-Dashboard
-Dashboard Stats
+```
+
+---
+
+# Dashboard
+
+## Dashboard Statistics
+
+```http id="u8oh6v"
 GET /dashboard/stats?wallet=YOUR_WALLET
-Events
-Check Asset Activity
-GET /events/check/:assetId
-Environment Variables
+```
+
+---
+
+# Environment Variables
+
+```env id="5r1gzg"
 DATABASE_URL=
 JWT_SECRET=
 OPENROUTER_API_KEY=
@@ -244,51 +395,89 @@ TELEGRAM_BOT_TOKEN=
 TELEGRAM_CHAT_ID=
 STELLAR_RPC_URL=
 STELLAR_NETWORK=
-Installation
-Clone Repository
-git clone https://github.com/your-repo/StellarFlow-backend.git
-Install Dependencies
+```
+
+---
+
+# Installation
+
+## Clone Repository
+
+```bash id="g7kl66"
+git clone https://github.com/your-repo/stellarflow.git
+```
+
+---
+
+## Install Dependencies
+
+```bash id="fmbg6g"
 npm install
-Setup Database
+```
+
+---
+
+## Setup Database
+
+```bash id="9hcbq7"
 npx prisma migrate dev
-Run Development Server
+```
+
+---
+
+## Start Development Server
+
+```bash id="31u5g0"
 npm run start:dev
-Future Improvements
-Real automated Stellar swaps
-AI strategy optimization
-Soroban smart contract automation
-Advanced analytics dashboard
-WebSocket market streams
-Mobile notifications
-Multi-chain support
-Creator loyalty systems
-Cross-chain swaps
-Copy trading automation
-Revenue Model
+```
 
- StellarFlow plans to monetize through:
+---
 
-Premium subscriptions
-Advanced AI automation
-Automated swap execution fees
-Creator engagement tools
-API access for developers
-Enterprise dashboards for token communities
-Advanced trading analytics
-Why StellarFlow?
+# Future Improvements
 
-The Stellar ecosystem is growing rapidly with creator assets, stablecoins, and tokenized communities.
+Planned future features include:
 
-However, most users still rely on manual monitoring and emotional trading decisions.
+* Real automated Stellar swaps
+* AI portfolio optimization
+* Multi-chain support
+* Mobile notifications
+* Soroban smart contract automation
+* Copy trading
+* Advanced analytics dashboard
+* Creator loyalty systems
+* Cross-chain swaps
+
+---
+
+# Revenue Model
+
+StellarFlow plans to generate revenue through:
+
+* Premium subscriptions
+* Advanced AI automation tools
+* Automated swap execution fees
+* Enterprise dashboards
+* Developer API access
+* Advanced portfolio analytics
+
+---
+
+# Why StellarFlow?
+
+Most traders and creator-token holders still rely on manual monitoring and emotional decisions.
 
 StellarFlow transforms Stellar assets into programmable, intelligent assets using:
 
-AI
-automation
-realtime monitoring
-swap automation
-creator engagement tools
+* AI
+* automation
+* real-time monitoring
+* automated swaps
+* smart portfolio protection
 
-The goal is to become the automation layer for creator economies and token communities on Stellar.
+The mission is to become the automation layer for the Stellar ecosystem.
 
+---
 
+# License
+
+MIT License
