@@ -6,7 +6,7 @@ AI-powered automation engine for creator tokens and assets on the Stellar networ
 
 StellarFlow helps creators, traders, and token communities automate actions based on real-time on-chain activity across the Stellar ecosystem.
 
-# Instead of manually monitoring Stellar assets, StellarFlow allows users to create intelligent automation rules that react to:
+Instead of manually monitoring Stellar assets, StellarFlow allows users to create intelligent automation rules that react to:
 
 Whale buys
 Price pumps or dumps
